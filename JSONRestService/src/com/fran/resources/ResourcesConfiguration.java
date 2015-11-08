@@ -4,7 +4,7 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-@ApplicationPath("resources")
+@ApplicationPath("rest")
 public class ResourcesConfiguration extends ResourceConfig {
 	public ResourcesConfiguration() {
 		packages("com.fran.resources");
