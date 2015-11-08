@@ -42,8 +42,10 @@ public class PersonDataResource {
 	@Path("/post")
 	public String postPerson(Person p) throws Exception {
 		
-		System.out.println("First Name = " + p.getFirstName());
-		System.out.println("Last Name = " + p.getLastName());
+		if(p!=null) {
+			System.out.println("First Name = " + p.getFirstName());
+			System.out.println("Last Name = " + p.getLastName());
+		}
 		
 		return "OK";
 	}
